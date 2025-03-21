@@ -12,8 +12,16 @@ CMPGraphQL is a project aimed at providing a robust and efficient GraphQL client
 
 ## Features
 
-- **Cross-Platform Support**: Applications build qith GraphQL to be supported on Android, iOS, Desktop and Web.
-- **Web Interface**: A user-friendly web interface built WasmJS for testing and interacting with the GraphQL API.
+- **Cross-Platform Support**: Applications runs on Android, iOS, Desktop and Web.
+- **Apollo GraphQL** client to fetch data from backend.
+- Used **Koin** for dependency Injection.
+- Project skeleton follows clean architecture and **MVI** pattern.
+- **Here's a video** of how it looks. You can always clone and check by yourself.
+  
+
+https://github.com/user-attachments/assets/0dc790e7-4433-44d8-bf1a-53816dbc2373
+
+
 
 ## Installation
 
