@@ -1,26 +1,68 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop, Server.
+# CMPGraphQL
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+CMPGraphQL is a project aimed at providing a robust and efficient GraphQL client implementation using Kotlin, Compose Multiplatform. This project is designed to facilitate easy and seamless integration of GraphQL APIs into your applications.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Table of Contents
 
-* `/server` is for the Ktor server application.
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-* `/shared` is for the code that will be shared between all targets in the project.
-  The most important subfolder is `commonMain`. If preferred, you can add code to the platform-specific folders here too.
+## Features
 
+- **Cross-Platform Support**: Applications build qith GraphQL to be supported on Android, iOS, Desktop and Web.
+- **Web Interface**: A user-friendly web interface built WasmJS for testing and interacting with the GraphQL API.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+## Installation
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+To get started with CMPGraphQL, follow these steps:
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/abkhare/CMPGraphQL.git
+   cd CMPGraphQL
+
+2. **Build the project:**
+
+   For Kotlin:
+   ```bash
+   ./gradlew build
+   ```
+  For Swift (iOS):
+  Open the CMPGraphQL.xcodeproj in Xcode and build the project.
+
+### Open the project in Android Studio
+
+1. Open Android Studio.
+2. Select `File -> Open`.
+3. Navigate to the cloned repository and select it.
+
+### Sync the project
+
+After opening the project, let Android Studio sync the project and download all the required dependencies.
+
+## Usage
+
+To run the application:
+
+1. Connect an Android device or start an emulator.
+2. Select the `app` module from the run configurations.
+3. Click on the `Run` button or press `Shift + F10`.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+  
