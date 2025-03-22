@@ -30,7 +30,6 @@ import com.khareab.cmp.graphql.domain.SimpleCountry
 fun CountriesScreen(
     state: CountriesState,
     onSelectedCountry: (String) -> Unit,
-    onDismissDialog: () -> Unit
 ) {
     Box(modifier = Modifier.fillMaxSize()) {
         if (state.isLoading) {

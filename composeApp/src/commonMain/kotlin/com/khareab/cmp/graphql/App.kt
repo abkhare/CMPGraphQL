@@ -26,7 +26,7 @@ fun App() {
             CountriesScreen(
                 state = state.value,
                 onSelectedCountry = {}
-            ) { }
+            )
         }
     }
 
