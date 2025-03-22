@@ -2,6 +2,9 @@ package com.khareab.cmp.graphql.domain
 
 import com.khareab.cmp.CountryQuery
 
+/**
+ * Data class to hold country details
+ */
 data class DetailedCountry(
     val code: String,
     val name: String,
@@ -12,6 +15,9 @@ data class DetailedCountry(
     val continent: String
 )
 
+/**
+ * Extension function to convert [CountryQuery.Country] to [DetailedCountry]
+ */
 fun CountryQuery.Country.toDetailedCountry() = DetailedCountry(
     code = code,
     name = name,

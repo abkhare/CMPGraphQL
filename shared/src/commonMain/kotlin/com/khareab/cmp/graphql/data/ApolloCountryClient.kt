@@ -9,6 +9,9 @@ import com.khareab.cmp.graphql.domain.SimpleCountry
 import com.khareab.cmp.graphql.domain.toDetailedCountry
 import com.khareab.cmp.graphql.domain.toSimpleCountry
 
+/**
+ * Apollo Client implementation of [CountryClient].
+ */
 class ApolloCountryClient(
     private val apolloClient: ApolloClient
 ): CountryClient {

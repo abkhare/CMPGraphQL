@@ -9,6 +9,9 @@ import com.khareab.cmp.graphql.data.ApolloCountryClient
 import com.khareab.cmp.graphql.domain.GetCountriesUseCase
 import com.khareab.cmp.graphql.domain.GetCountryUseCase
 
+/**
+ * Declaring dependencies of shared module.
+ */
 val sharedModule = module {
     single {
         ApolloClient
