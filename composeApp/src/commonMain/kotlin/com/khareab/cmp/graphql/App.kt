@@ -11,6 +11,9 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.koin.compose.KoinApplication
 import org.koin.compose.viewmodel.koinViewModel
 
+/**
+ * Composable function which is the entry point of all platforms.
+ */
 @Composable
 @Preview
 fun App() {

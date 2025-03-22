@@ -7,6 +7,9 @@ import androidx.compose.foundation.rememberScrollbarAdapter
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
+/**
+ * Actual function to enable scroll for desktop application.
+ */
 @Composable
 actual fun GetScrollBars() {
     val stateVertical = rememberScrollState(0)

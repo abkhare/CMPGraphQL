@@ -9,9 +9,14 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
+/**
+ * View model for the countries screen.
+ * @param getCountryUseCase Use case for getting a country.
+ * @param getCountriesUseCase Use case for getting countries.
+ */
 class CountriesViewModel(
-    val getCountryUseCase: GetCountryUseCase,
-    val getCountriesUseCase: GetCountriesUseCase
+    private val getCountryUseCase: GetCountryUseCase,
+    private val getCountriesUseCase: GetCountriesUseCase
 ) : ViewModel() {
     private val _state = MutableStateFlow(CountriesState())
     val state = _state.asStateFlow()

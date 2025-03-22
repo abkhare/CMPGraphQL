@@ -21,6 +21,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.khareab.cmp.graphql.domain.SimpleCountry
 
+/**
+ * CountriesScreen composable function.
+ * @param state The state of the countries screen.
+ * @param onSelectedCountry The callback function to be invoked when a country is selected.
+ */
 @Composable
 fun CountriesScreen(
     state: CountriesState,
@@ -29,12 +34,15 @@ fun CountriesScreen(
 ) {
     Box(modifier = Modifier.fillMaxSize()) {
         if (state.isLoading) {
+            // Loading indicator
             CircularProgressIndicator(modifier = Modifier.align(Alignment.Center))
         } else {
+            // List of countries
             LazyColumn(
                 modifier = Modifier.fillMaxSize()
             ) {
                 items(state.countries.size) { index ->
+                    // Country Item
                     CountryItem(
                         country = state.countries[index],
                         index = index
@@ -64,6 +72,7 @@ fun CountryItem(
         }.background( if (index%2 == 0) Color.LightGray else Color.Cyan),
         verticalAlignment = Alignment.CenterVertically
     ) {
+        // Country emoji
         Text(
             text = country.emoji,
             fontSize = 30.sp
@@ -72,6 +81,7 @@ fun CountryItem(
             modifier = Modifier.padding(10.dp),
             verticalArrangement = Arrangement.Center
         ) {
+            // Country name and capital
             Text(
                 text = country.name,
                 fontSize = 24.sp
